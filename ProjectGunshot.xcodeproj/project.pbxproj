@@ -23,6 +23,8 @@
 		622CC3BB2856E20B003F33D6 /* MessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622CC3BA2856E20B003F33D6 /* MessageManager.swift */; };
 		622CC3BD2856E3E0003F33D6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622CC3BC2856E3E0003F33D6 /* Constants.swift */; };
 		622CC3C12856E8F7003F33D6 /* MockRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622CC3BF2856E583003F33D6 /* MockRootViewController.swift */; };
+		622CC3C32857E1DB003F33D6 /* LocationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622CC3C22857E1DA003F33D6 /* LocationManagerTests.swift */; };
+		622CC3C52857E537003F33D6 /* MockCLLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622CC3C42857E537003F33D6 /* MockCLLocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		622CC3BA2856E20B003F33D6 /* MessageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageManager.swift; sourceTree = "<group>"; };
 		622CC3BC2856E3E0003F33D6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		622CC3BF2856E583003F33D6 /* MockRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRootViewController.swift; sourceTree = "<group>"; };
+		622CC3C22857E1DA003F33D6 /* LocationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerTests.swift; sourceTree = "<group>"; };
+		622CC3C42857E537003F33D6 /* MockCLLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCLLocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				620D5B10284DD0F500FED691 /* MessageManagerTests.swift */,
+				622CC3C22857E1DA003F33D6 /* LocationManagerTests.swift */,
 			);
 			path = ProjectGunshotTests;
 			sourceTree = "<group>";
@@ -153,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				622CC3BF2856E583003F33D6 /* MockRootViewController.swift */,
+				622CC3C42857E537003F33D6 /* MockCLLocationManager.swift */,
 			);
 			path = TestingMocks;
 			sourceTree = "<group>";
@@ -300,6 +306,7 @@
 				622CC3BD2856E3E0003F33D6 /* Constants.swift in Sources */,
 				622CC3B92856DB12003F33D6 /* LocationManager.swift in Sources */,
 				622CC3C12856E8F7003F33D6 /* MockRootViewController.swift in Sources */,
+				622CC3C52857E537003F33D6 /* MockCLLocationManager.swift in Sources */,
 				620D5B02284DD0F400FED691 /* ContentView.swift in Sources */,
 				620D5B00284DD0F400FED691 /* ProjectGunshotApp.swift in Sources */,
 				622CC3BB2856E20B003F33D6 /* MessageManager.swift in Sources */,
@@ -310,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				622CC3C32857E1DB003F33D6 /* LocationManagerTests.swift in Sources */,
 				620D5B11284DD0F500FED691 /* MessageManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

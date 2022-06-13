@@ -8,16 +8,17 @@
 import CoreLocation
 
 class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
-    let manager = CLLocationManager()
+    let locationManager = CLLocationManager()
 
     @Published var location: CLLocationCoordinate2D?
 
     override init() {
         super.init()
-        manager.delegate = self
+        locationManager.delegate = self
     }
 
-    func requestLocation() {
+    func requestLocation(_manager: CLLocationManager? = nil) {
+        let manager = _manager ?? locationManager
         manager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
         manager.requestLocation()
     }

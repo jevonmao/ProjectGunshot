@@ -14,6 +14,13 @@
 		620D5B11284DD0F500FED691 /* ProjectGunshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620D5B10284DD0F500FED691 /* ProjectGunshotTests.swift */; };
 		620D5B1B284DD0F500FED691 /* ProjectGunshotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620D5B1A284DD0F500FED691 /* ProjectGunshotUITests.swift */; };
 		620D5B1D284DD0F500FED691 /* ProjectGunshotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620D5B1C284DD0F500FED691 /* ProjectGunshotUITestsLaunchTests.swift */; };
+		622CC3AD2856D967003F33D6 /* PermissionsSwiftUICamera in Frameworks */ = {isa = PBXBuildFile; productRef = 622CC3AC2856D967003F33D6 /* PermissionsSwiftUICamera */; };
+		622CC3AF2856D967003F33D6 /* PermissionsSwiftUIContacts in Frameworks */ = {isa = PBXBuildFile; productRef = 622CC3AE2856D967003F33D6 /* PermissionsSwiftUIContacts */; };
+		622CC3B12856D967003F33D6 /* PermissionsSwiftUILocation in Frameworks */ = {isa = PBXBuildFile; productRef = 622CC3B02856D967003F33D6 /* PermissionsSwiftUILocation */; };
+		622CC3B32856D967003F33D6 /* PermissionsSwiftUIMicrophone in Frameworks */ = {isa = PBXBuildFile; productRef = 622CC3B22856D967003F33D6 /* PermissionsSwiftUIMicrophone */; };
+		622CC3B52856D967003F33D6 /* PermissionsSwiftUINotification in Frameworks */ = {isa = PBXBuildFile; productRef = 622CC3B42856D967003F33D6 /* PermissionsSwiftUINotification */; };
+		622CC3B92856DB12003F33D6 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622CC3B82856DB12003F33D6 /* LocationManager.swift */; };
+		622CC3BB2856E20B003F33D6 /* MessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622CC3BA2856E20B003F33D6 /* MessageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,8 @@
 		620D5B16284DD0F500FED691 /* ProjectGunshotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectGunshotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		620D5B1A284DD0F500FED691 /* ProjectGunshotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectGunshotUITests.swift; sourceTree = "<group>"; };
 		620D5B1C284DD0F500FED691 /* ProjectGunshotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectGunshotUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		622CC3B82856DB12003F33D6 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		622CC3BA2856E20B003F33D6 /* MessageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +60,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				622CC3B52856D967003F33D6 /* PermissionsSwiftUINotification in Frameworks */,
+				622CC3AF2856D967003F33D6 /* PermissionsSwiftUIContacts in Frameworks */,
+				622CC3AD2856D967003F33D6 /* PermissionsSwiftUICamera in Frameworks */,
+				622CC3B12856D967003F33D6 /* PermissionsSwiftUILocation in Frameworks */,
+				622CC3B32856D967003F33D6 /* PermissionsSwiftUIMicrophone in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +112,8 @@
 				620D5B01284DD0F400FED691 /* ContentView.swift */,
 				620D5B03284DD0F500FED691 /* Assets.xcassets */,
 				620D5B05284DD0F500FED691 /* Preview Content */,
+				622CC3B82856DB12003F33D6 /* LocationManager.swift */,
+				622CC3BA2856E20B003F33D6 /* MessageManager.swift */,
 			);
 			path = ProjectGunshot;
 			sourceTree = "<group>";
@@ -143,6 +159,13 @@
 			dependencies = (
 			);
 			name = ProjectGunshot;
+			packageProductDependencies = (
+				622CC3AC2856D967003F33D6 /* PermissionsSwiftUICamera */,
+				622CC3AE2856D967003F33D6 /* PermissionsSwiftUIContacts */,
+				622CC3B02856D967003F33D6 /* PermissionsSwiftUILocation */,
+				622CC3B22856D967003F33D6 /* PermissionsSwiftUIMicrophone */,
+				622CC3B42856D967003F33D6 /* PermissionsSwiftUINotification */,
+			);
 			productName = ProjectGunshot;
 			productReference = 620D5AFC284DD0F400FED691 /* ProjectGunshot.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +238,9 @@
 				Base,
 			);
 			mainGroup = 620D5AF3284DD0F400FED691;
+			packageReferences = (
+				622CC3AB2856D967003F33D6 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */,
+			);
 			productRefGroup = 620D5AFD284DD0F400FED691 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +283,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				622CC3B92856DB12003F33D6 /* LocationManager.swift in Sources */,
 				620D5B02284DD0F400FED691 /* ContentView.swift in Sources */,
 				620D5B00284DD0F400FED691 /* ProjectGunshotApp.swift in Sources */,
+				622CC3BB2856E20B003F33D6 /* MessageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +448,7 @@
 				DEVELOPMENT_TEAM = TNL6P3HKQQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need your location fucker";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +478,7 @@
 				DEVELOPMENT_TEAM = TNL6P3HKQQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need your location fucker";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -583,6 +613,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		622CC3AB2856D967003F33D6 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jevonmao/PermissionsSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		622CC3AC2856D967003F33D6 /* PermissionsSwiftUICamera */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 622CC3AB2856D967003F33D6 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUICamera;
+		};
+		622CC3AE2856D967003F33D6 /* PermissionsSwiftUIContacts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 622CC3AB2856D967003F33D6 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUIContacts;
+		};
+		622CC3B02856D967003F33D6 /* PermissionsSwiftUILocation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 622CC3AB2856D967003F33D6 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUILocation;
+		};
+		622CC3B22856D967003F33D6 /* PermissionsSwiftUIMicrophone */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 622CC3AB2856D967003F33D6 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUIMicrophone;
+		};
+		622CC3B42856D967003F33D6 /* PermissionsSwiftUINotification */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 622CC3AB2856D967003F33D6 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUINotification;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 620D5AF4284DD0F400FED691 /* Project object */;
 }

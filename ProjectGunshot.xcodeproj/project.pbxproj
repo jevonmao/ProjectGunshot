@@ -33,6 +33,9 @@
 		622CC3D22857F1DC003F33D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 622CC3D12857F1DC003F33D6 /* GoogleService-Info.plist */; };
 		622CC3D32857F1DC003F33D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 622CC3D12857F1DC003F33D6 /* GoogleService-Info.plist */; };
 		622CC3D42857F1DC003F33D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 622CC3D12857F1DC003F33D6 /* GoogleService-Info.plist */; };
+		622CC3D62857F263003F33D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622CC3D52857F263003F33D6 /* AppDelegate.swift */; };
+		622CC3DA28580BB0003F33D6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622CC3D928580BB0003F33D6 /* LoginView.swift */; };
+		622CC3E028580CFA003F33D6 /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622CC3DF28580CFA003F33D6 /* LoginViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,11 @@
 		622CC3C22857E1DA003F33D6 /* LocationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerTests.swift; sourceTree = "<group>"; };
 		622CC3C42857E537003F33D6 /* MockCLLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCLLocationManager.swift; sourceTree = "<group>"; };
 		622CC3D12857F1DC003F33D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		622CC3D52857F263003F33D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		622CC3D72857F32B003F33D6 /* ProjectGunshot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProjectGunshot.entitlements; sourceTree = "<group>"; };
+		622CC3D828580B85003F33D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		622CC3D928580BB0003F33D6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		622CC3DF28580CFA003F33D6 /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +138,9 @@
 		620D5AFE284DD0F400FED691 /* ProjectGunshot */ = {
 			isa = PBXGroup;
 			children = (
+				622CC3DE28580C6D003F33D6 /* Views */,
+				622CC3D828580B85003F33D6 /* Info.plist */,
+				622CC3D72857F32B003F33D6 /* ProjectGunshot.entitlements */,
 				622CC3D12857F1DC003F33D6 /* GoogleService-Info.plist */,
 				622CC3BE2856E575003F33D6 /* TestingMocks */,
 				620D5AFF284DD0F400FED691 /* ProjectGunshotApp.swift */,
@@ -139,6 +150,7 @@
 				622CC3B82856DB12003F33D6 /* LocationManager.swift */,
 				622CC3BA2856E20B003F33D6 /* MessageManager.swift */,
 				622CC3BC2856E3E0003F33D6 /* Constants.swift */,
+				622CC3D52857F263003F33D6 /* AppDelegate.swift */,
 			);
 			path = ProjectGunshot;
 			sourceTree = "<group>";
@@ -176,6 +188,39 @@
 				622CC3C42857E537003F33D6 /* MockCLLocationManager.swift */,
 			);
 			path = TestingMocks;
+			sourceTree = "<group>";
+		};
+		622CC3DB28580BE5003F33D6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				622CC3DD28580BF7003F33D6 /* ViewModels */,
+				622CC3DC28580BF1003F33D6 /* Components */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		622CC3DC28580BF1003F33D6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				622CC3D928580BB0003F33D6 /* LoginView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		622CC3DD28580BF7003F33D6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				622CC3DF28580CFA003F33D6 /* LoginViewViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		622CC3DE28580C6D003F33D6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				622CC3DB28580BE5003F33D6 /* Login */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,9 +372,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				622CC3D62857F263003F33D6 /* AppDelegate.swift in Sources */,
 				622CC3BD2856E3E0003F33D6 /* Constants.swift in Sources */,
 				622CC3B92856DB12003F33D6 /* LocationManager.swift in Sources */,
+				622CC3DA28580BB0003F33D6 /* LoginView.swift in Sources */,
 				622CC3C12856E8F7003F33D6 /* MockRootViewController.swift in Sources */,
+				622CC3E028580CFA003F33D6 /* LoginViewViewModel.swift in Sources */,
 				622CC3C52857E537003F33D6 /* MockCLLocationManager.swift in Sources */,
 				620D5B02284DD0F400FED691 /* ContentView.swift in Sources */,
 				620D5B00284DD0F400FED691 /* ProjectGunshotApp.swift in Sources */,
@@ -490,12 +538,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ProjectGunshot/ProjectGunshot.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ProjectGunshot/Preview Content\"";
 				DEVELOPMENT_TEAM = 2WZXS2AJPY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProjectGunshot/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need your location fucker";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -520,12 +570,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ProjectGunshot/ProjectGunshot.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ProjectGunshot/Preview Content\"";
 				DEVELOPMENT_TEAM = 2WZXS2AJPY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProjectGunshot/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need your location fucker";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

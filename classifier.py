@@ -125,7 +125,6 @@ def write_firebase(classification, pi_identifier, mic):
     requests.put(f"https://project-gunshot-default-rtdb.firebaseio.com/RaspberryPi{pi_identifier}/sound{counter}.json",
                  json.dumps(data))
 
-requests.delete("https://project-gunshot-default-rtdb.firebaseio.com")
 while True:
     frames, micID = pyaudio_record()
     samples = np.array(frames, dtype="float32")
